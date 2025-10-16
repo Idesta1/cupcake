@@ -1,23 +1,31 @@
+:root {
+  --main-bg-color: #fff;
+  --primary-bg-color: pink;
+  --secondary-color: #0e5a56;
+  --font-color: #333;
+  --font-family: "playwrite US Modern", cursive;
+  --title-font-color: violet;
+}
 body {
-  background: pink;
+  background-color: var(--primary-bg-color);
 }
 header {
   text-align: center;
-  background: #0e5a56;
+  background: var(--secondary-color);
   color: #fff;
   padding: 10px;
 }
 
 h1 {
-  font-family: "Playwrite US Modern", cursive;
+  font-family: var(--font-family);
 }
 h2 {
   font-size: 18px;
 }
 h3 {
-  font-family: "Playwrite US Modern", cursive;
+  font-family: var(--font-family);
   font-size: 20px;
-  color: violet;
+  color: var(--title-font-color);
 }
 
 p {
@@ -25,13 +33,15 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
+  line-height: 1.4;
+  color: var(--font-color);
 }
 strong {
   color: red;
 }
 
 main {
-  background: white;
+  background-color: var(--main-bg-color);
   width: 100%;
   max-width: 600px;
   margin: auto;
@@ -40,11 +50,10 @@ main {
   margin-top: 20px;
 }
 
-img {
+.img-fluid {
   width: 100%;
   height: auto;
   border-radius: 16px;
-  border: 1px solid black;
 }
 
 ul {
@@ -73,8 +82,8 @@ button {
   padding: 15px 30px;
   border-radius: 25px;
   color: white;
-  background: #0e5a56;
-  align-items: center;
+  background: var(--secondary-color);
+  text-align: center;
   cursor: pointer;
   border: none;
 }
@@ -89,5 +98,27 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 14px;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  main {
+    max-width: 300px;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
   }
 }
