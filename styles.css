@@ -1,28 +1,33 @@
 body {
   background: pink;
-  margin: 0;
 }
 header {
   text-align: center;
   background: #0e5a56;
   color: #fff;
   padding: 10px;
-  max-width: 100%;
-  margin: 20px auto 0;
 }
 
 h1 {
   font-family: "Playwrite US Modern", cursive;
 }
 h2 {
+  font-size: 18px;
+}
+h3 {
   font-family: "Playwrite US Modern", cursive;
+  font-size: 20px;
   color: violet;
 }
+
 p {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 14px;
+}
+strong {
+  color: red;
 }
 
 main {
@@ -69,24 +74,20 @@ button {
   border-radius: 25px;
   color: white;
   background: #0e5a56;
-  align-item: center;
+  align-items: center;
   cursor: pointer;
+  border: none;
 }
 
 footer {
   text-align: center;
-  font-size: 12px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-weight: bold;
 }
 @media (max-width: 600px) {
-  header {
-    width: 100%;
-  }
   ul {
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    font-size: 14px;
   }
 }
